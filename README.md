@@ -63,6 +63,17 @@ STAR 2.6.1d rather than the 2.7.x that nf-core 3.14.0 normally ships, because th
 alignment ran through `STAR_ALIGN_IGENOMES`, which pins the older binary for prebuilt
 iGenomes-style indices. The process name is in the execution trace.
 
+## Data
+
+IGVF Data Portal, analysis set
+[IGVFDS7222ZXXW](https://data.igvf.org/analysis-sets/IGVFDS7222ZXXW/) — the BAMs,
+indexes, stranded bigWigs and the two merged Salmon tables. Its inputs are measurement
+sets [IGVFDS9984RFAZ](https://data.igvf.org/measurement-sets/IGVFDS9984RFAZ/) and
+[IGVFDS7058GJAW](https://data.igvf.org/measurement-sets/IGVFDS7058GJAW/).
+
+These records are `in progress`, so the links resolve only for signed-in submitters
+until release.
+
 ## Related
 
 * Pipeline: [nf-core/rnaseq](https://github.com/nf-core/rnaseq/releases/tag/3.14.0) 3.14.0
