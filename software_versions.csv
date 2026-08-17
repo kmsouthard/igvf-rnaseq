@@ -1,0 +1,9 @@
+step,software,version,source
+read trimming,Trim Galore!,[open],nf-core/rnaseq 3.12.0 default
+alignment,STAR,2.7.10a,"already on the portal, /software-versions/star-v2.7.10a/"
+filtering,Picard MarkDuplicates,[open],markdup in every BAM filename
+alignment post-processing,samtools,[open],sorted and indexed
+quantification,Salmon,1.10.1,"already on the portal, /software-versions/salmon-v1.10.1/"
+signal generation,BEDTools,2.30.0,"already on the portal, /software-versions/bedtools-v2.30.0/"
+signal generation,UCSC bedGraphToBigWig,[open],BEDTools cannot write bigWig
+workflow,nf-core/rnaseq,3.12.0,Workflow IGVFWF5466MQQW
