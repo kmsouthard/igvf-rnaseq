@@ -1,0 +1,150 @@
+----------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~\
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/rnaseq vv3.14.0-gb89fac3
+----------------------------------------------------
+Run Name: boring_hamilton
+
+####################################################
+## nf-core/rnaseq execution completed unsuccessfully! ##
+####################################################
+The exit status of the task that caused the workflow execution to fail was: null.
+The full error message was:
+
+Error executing process > 'NFCORE_RNASEQ:RNASEQ:QUALIMAP_RNASEQ (HS27_WT_2_IGO_14178_2_S126)'
+
+Caused by:
+  Process exceeded running time limit (8h)
+
+Command executed:
+
+  unset DISPLAY
+  mkdir -p tmp
+  export _JAVA_OPTIONS=-Djava.io.tmpdir=./tmp
+  qualimap \
+      --java-mem-size=29491M \
+      rnaseq \
+       \
+      -bam HS27_WT_2_IGO_14178_2_S126.markdup.sorted.bam \
+      -gtf genome.filtered.gtf \
+      -p strand-specific-reverse \
+      -pe \
+      -outdir HS27_WT_2_IGO_14178_2_S126
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_RNASEQ:RNASEQ:QUALIMAP_RNASEQ":
+      qualimap: $(echo $(qualimap 2>&1) | sed 's/^.*QualiMap v.//; s/Built.*$//')
+  END_VERSIONS
+
+Command exit status:
+  -
+
+Command output:
+  Read 60000000 records.
+  Read 70000000 records.
+  Read 80000000 records.
+  Read 90000000 records.
+  Read 100000000 records.
+  Read 110000000 records.
+  Read 120000000 records.
+  Read 130000000 records.
+  Read 140000000 records.
+  Read 150000000 records.
+  Read 160000000 records.
+  Read 170000000 records.
+  Read 180000000 records.
+  Read 190000000 records.
+  Read 200000000 records.
+  Read 210000000 records.
+  Read 220000000 records.
+  Read 230000000 records.
+  Read 240000000 records.
+  Read 250000000 records.
+  Read 260000000 records.
+  Read 270000000 records.
+  Read 280000000 records.
+  Read 290000000 records.
+  Read 300000000 records.
+  Read 310000000 records.
+  Read 320000000 records.
+  Read 330000000 records.
+  Read 340000000 records.
+  Read 350000000 records.
+  Read 360000000 records.
+  Read 370000000 records.
+  Read 380000000 records.
+  Read 390000000 records.
+  Read 400000000 records.
+  Read 410000000 records.
+  Read 420000000 records.
+  Read 430000000 records.
+  Read 440000000 records.
+  Read 450000000 records.
+  Read 460000000 records.
+  Read 470000000 records.
+  Read 480000000 records.
+  Read 490000000 records.
+  Read 500000000 records.
+  Read 510000000 records.
+  Read 520000000 records.
+  Read 530000000 records.
+  Read 540000000 records.
+  Finished reading inputs, merging and writing to output now.
+
+Command error:
+  Picked up _JAVA_OPTIONS: -Djava.io.tmpdir=./tmp
+
+Work dir:
+  /lila/data/norman/datasets/RA015_Hs27wt_DeepRNAseq/analysis/nextflow/work/54/4268a72040f25489fe8ad0b3ad6e31
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+
+
+
+
+
+The workflow was completed at 2024-04-25T23:06:28.333272-04:00 (duration: 13h 35m 45s)
+
+The command used to launch the workflow was as follows:
+
+  nextflow run nf-core/rnaseq -profile singularity --input samplesheet.csv --outdir /data/norman/datasets/RA015_Hs27wt_DeepRNAseq/results/new_analysis --fasta /fscratch/genomes/tmn/genome_fasta/genome.fa --gtf /fscratch/genomes/tmn/annotation/genes.gtf --star_index /fscratch/genomes/tmn/STAR_Index_nextflow --max_cpus 24 --max_memory 256.GB --email ardyr@mskcc.org
+
+
+
+Pipeline Configuration:
+-----------------------
+ - revision: master
+ - runName: boring_hamilton
+ - containerEngine: singularity
+ - launchDir: /lila/data/norman/datasets/RA015_Hs27wt_DeepRNAseq/analysis/nextflow
+ - workDir: /lila/data/norman/datasets/RA015_Hs27wt_DeepRNAseq/analysis/nextflow/work
+ - projectDir: /home/ardyr/.nextflow/assets/nf-core/rnaseq
+ - userName: ardyr
+ - profile: singularity
+ - configFiles: 
+ - input: samplesheet.csv
+ - outdir: /data/norman/datasets/RA015_Hs27wt_DeepRNAseq/results/new_analysis
+ - email: ardyr@mskcc.org
+ - fasta: /fscratch/genomes/tmn/genome_fasta/genome.fa
+ - gtf: /fscratch/genomes/tmn/annotation/genes.gtf
+ - star_index: /fscratch/genomes/tmn/STAR_Index_nextflow
+ - min_mapped_reads: 5
+ - max_cpus: 24
+ - max_memory: 256.GB
+ - Date Started: 2024-04-25T09:30:43.102279-04:00
+ - Date Completed: 2024-04-25T23:06:28.333272-04:00
+ - Pipeline script file path: /home/ardyr/.nextflow/assets/nf-core/rnaseq/main.nf
+ - Pipeline script hash ID: 746820de9bf04c0ec23e1e0295aaf91b
+ - Pipeline repository Git URL: https://github.com/nf-core/rnaseq
+ - Pipeline repository Git Commit: b89fac32650aacc86fcda9ee77e00612a1d77066
+ - Pipeline Git branch/tag: master
+ - Nextflow Version: 23.04.1
+ - Nextflow Build: 5866
+ - Nextflow Compile Timestamp: 15-04-2023 06:51 UTC
+
+--
+nf-core/rnaseq
+https://github.com/nf-core/rnaseq

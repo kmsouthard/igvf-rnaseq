@@ -1,0 +1,3 @@
+sample,single_end,fastq_1,fastq_2,strandedness
+HS27_WT_2_IGO_14178_2_S126_T1,0,/data/norman/datasets/RA015_Hs27wt_DeepRNAseq/sequencing_data/HS27_WT_2_IGO_14178_2_S126_L001_R1_001.fastq.gz,/data/norman/datasets/RA015_Hs27wt_DeepRNAseq/sequencing_data/HS27_WT_2_IGO_14178_2_S126_L001_R2_001.fastq.gz,auto
+Hs27_WT_1_IGO_14178_1_S125_T1,0,/data/norman/datasets/RA015_Hs27wt_DeepRNAseq/sequencing_data/Hs27_WT_1_IGO_14178_1_S125_L001_R1_001.fastq.gz,/data/norman/datasets/RA015_Hs27wt_DeepRNAseq/sequencing_data/Hs27_WT_1_IGO_14178_1_S125_L001_R2_001.fastq.gz,auto
