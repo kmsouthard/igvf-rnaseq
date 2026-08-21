@@ -1,11 +1,11 @@
 step,software,version,source
 read trimming,Trim Galore!,[open],TRIMGALORE in the execution trace; nf-core 3.14.0 pins 0.6.7
-alignment,STAR,2.6.1d,"star_salmon/log/*.Log.out banner; process is STAR_ALIGN_IGENOMES, which pins the older binary for prebuilt igenomes indices. PORTAL SAYS 2.7.10a - WRONG"
+alignment,STAR,2.6.1d,"star_salmon/log/*.Log.out banner; process is STAR_ALIGN_IGENOMES, which pins the older binary for prebuilt igenomes indices. The portal records 2.7.10a; superseded by the run log"
 filtering,Picard MarkDuplicates,[open],BAM_MARKDUPLICATES_PICARD in the execution trace
 alignment post-processing,samtools,[open],"BAM_SORT_STATS_SAMTOOLS, SAMTOOLS_INDEX in the trace"
 quantification,Salmon,1.10.1,aux_info/meta_info.json salmon_version; portal agrees
 signal generation,BEDTools,2.30.0,"BEDTOOLS_GENOMECOV in the trace; version from the portal, not confirmed against the run"
 signal generation,UCSC bedClip,[open],"BEDGRAPH_BEDCLIP_BEDGRAPHTOBIGWIG_{FORWARD,REVERSE}:UCSC_BEDCLIP"
 signal generation,UCSC bedGraphToBigWig,[open],"BEDGRAPH_BEDCLIP_BEDGRAPHTOBIGWIG_{FORWARD,REVERSE}:UCSC_BEDGRAPHTOBIGWIG"
-workflow,nf-core/rnaseq,3.14.0-gb89fac3,pipeline_report.txt banner. PORTAL Workflow IGVFWF5466MQQW SAYS v3.12.0 - WRONG
+workflow,nf-core/rnaseq,3.14.0-gb89fac3,pipeline_report.txt banner. Workflow IGVFWF5466MQQW records v3.12.0; superseded by the run banner
 workflow,Nextflow,23.04.1,pipeline_report.txt
